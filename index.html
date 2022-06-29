@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HEMIGWAY'S LEGACY - FABRIQUANT D'EXPÉRIENCE</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="/assets/img/logo.png" />
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul class="menu">
+                <li class="menu-item logo"> <img src="/assets/img/logo.png" width="120" height="120" alt="fishing game">
+                </li>
+                <li class="menu-item"> <a href="/" rel="noopener noreferrer">Accueil</a> </li>
+                <li class="menu-item"><a href="#brand">La marque</a></li>
+                <li class="menu-item"><a href="#game">Le jeu</a></li>
+                <li class="menu-item"><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="hero">
+        <div class="hero-text">
+            <h1>HEMINGWAY'S LEGACY</h1>
+            <h3>Vos sorties en mer ne seront plus les mêmes</h3>
+        </div>
+    </section>
+    <main>
+        <section id="brand" class="info">
+            <div class="info-text">
+                <h4>Éco-responsable et équitable</h4>
+                <ul>
+                    <li>Produits fabriqués à base de matière recyclés <strong>(80%)</strong></li>
+                    <li>Respect des matières premières</li>
+                    <li>Durable</li>
+                    <li>Fabriqué en France</li>
+                </ul>
+            </div>
+        </section>
+        <section class="categories">
+            <h4>Des produits de qualité près de chez vous</h4>
+            <ul class="categories-items">
+                <li><img src="/assets/img/moulinet.jpg" width="250" height="200" alt="moulinet de pêche" ></li>
+                <li><img src="/assets/img/leurres.jpg" width="250" height="200" alt="leurres de peche dans la bouche d'un barracuda"></li>
+                <li><img src="/assets/img/cannes.jpg" width="250" height="200" alt="canne à pêche au lever du soleil"></li>
+                <li><img src="/assets/img/bateau.jpg" width="250" height="200" alt="tableau de bord d'un zodiac"></li>
+            </ul>
+        </section>
+        <section class="rewards">
+            <div class="rewards-text">
+                <h4>Jouez et tentez de gagner</h4>
+                <ul class="reward-list">
+                    <li class="reward-item">1er lot : Un bateau de 6 mètres avec remorque et 3 kits de pêche complet
+                        (traine, jig et lancer)</li>
+                    <li class="reward-item">2ème lot : Une sortie en catamaran pour 4 personnes et un kit de pêche
+                        complet au choix</li>
+                    <li class="reward-item">3ème lot : Un kit de pêche complet au choix</li>
+                </ul>
+            </div>
+        </section>
+        <section id="game" class="game-container">
+            <h4>Tentez votre chance !</h4>
+            <div class="game-container-canvas"></div>
+        </section>
+        <section id="contact" class="contact">
+            <h4>Contactez-nous</h4>
+            <form id="my-form" action="https://formspree.io/f/mlezkjop" method="POST">
+                <label>Nom :</label>
+                <input type="text" name="name" />
+                <label>Teléphone :</label>
+                <input required type="tel" name="phone" />
+                <label>Email:</label>
+                <input required type="email" name="email" />
+                <label>Message:</label>
+                <textarea name="message" id="visitor_message" cols="30" rows="10"></textarea>
+                <label>Je comprends que mes données personnelles seront temporairement enregistrées*:</label>
+                <input required type="checkbox" name="rgpd"/>
+                <label>S'inscrire à la newsletter pour recevoir des offres sur nos produits:</label>
+                <input  type="checkbox" name="emailing"/>
+                <button id="my-form-button">Envoyer</button>
+                <p id="my-form-status"></p>
+              </form>
+              
+        </section>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/phaser/3.11.0/phaser.min.js"></script>
+    <script type="module" src="/assets/js/game.js"></script>
+    <footer>
+        MIAW - Brice Courtot - 2022
+    </footer>
+</body>
+
+</html>

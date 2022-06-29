@@ -1,0 +1,8 @@
+{
+    "scoreLimit": 60,
+    "sharkSpeed": 4,
+    "tunaSpeed": 2,
+    "sardineSpeed": 1,
+    "swordSpeed": 3,
+    "fishScore": 20
+}
